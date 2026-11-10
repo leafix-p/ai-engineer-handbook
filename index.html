@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#3f51b5">
+  <title>AI 工程师学习手册</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/themes/vue.css">
+  <style>
+    :root { --theme-color: #3f51b5; }
+    .sidebar { width: 300px; }
+    .content { max-width: 900px; }
+    @media screen and (max-width: 768px) {
+      .sidebar { width: 260px; }
+    }
+    body { -webkit-text-size-adjust: 100%; }
+    .markdown-section { font-size: 16px; line-height: 1.75; }
+    .markdown-section table { display: block; overflow-x: auto; }
+    .markdown-section pre { border-radius: 8px; }
+  </style>
+</head>
+<body>
+  <div id="app">加载中…</div>
+  <script>
+    window.$docsify = {
+      name: 'AI 工程师学习手册',
+      // 建好仓库后取消下一行注释并改成你的 GitHub 用户名/仓库名
+      // repo: 'yourname/ai-engineer-handbook',
+      homepage: 'README.md',
+      loadSidebar: true,
+      subMaxLevel: 3,
+      maxLevel: 3,
+      relativePath: true,
+      search: {
+        placeholder: '搜索章节、术语…',
+        noData: '没有找到结果',
+        depth: 3
+      },
+      copyCode: {
+        buttonText: '复制',
+        errorText: '复制失败',
+        successText: '已复制'
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-copy-code@2/dist/docsify-copy-code.min.js"></script>
+</body>
+</html>
